@@ -1,21 +1,14 @@
-#include <iostream>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <conio.h>
+#include "global.h"
 using namespace std;
-
-typedef struct{
-	char ;
-	int harga;
-}produk;
-
-typedef struct{
-	char ID[8];
-	char password[15];
-	produk layanan; 
-	int bill;
-}Dt_costumer;
 
 int main()
 {
+	int menu;
+	
 	cout<<" ============================================================================================= "<<endl;
 	cout<<endl;
 	cout<<endl;
@@ -37,9 +30,38 @@ int main()
 	cout<<"    SELAMAT DATANG DI LAYANAN INDEKS.NET"<<endl;
 	cout<<endl;
 	cout<<"    1. Daftar Berlangganan"<<endl;
-	cout<<"    2. Upgrade Layanan"    <<endl;
-	cout<<"    3. Cek Tagihan "       <<endl;
-	cout<<"    4. Berhenti Langganan" <<endl;
+	cout<<"    2. Upgrade Layanan"<<endl;
+	cout<<"    3. Cek Tagihan "<<endl;
+	cout<<"    4. Berhenti Langganan"<<endl;
 	cout<<"    5. Akses Sebagai Admin"<<endl;
+	cout<<"    6. Keluar"<<endl;
+	
+	
+	cout<<"		Silahkan pilih Menu (1/2/3/4/5) : ";
+	cin>>menu;
+	
+	switch(menu) {
+			case : 1{
+			regist();
+			break;
+		}
+		case : 2{
+			upgrade();
+			break;
+		}
+		case : 3{
+			cektagihan();
+			break;
+		}
+		case : 4{
+			stoplangganan();
+			break;
+		}
+		case :5{
+			myAdmin();
+			break;
+		}
+	}
+	
 
 }
